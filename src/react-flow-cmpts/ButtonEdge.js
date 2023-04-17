@@ -5,10 +5,6 @@ import '../index.css'
 
 const foreignObjectSize = 40;
 
-const onEdgeClick = (evt, id) => {
-    console.log(`Clicked Edge ${id}`)
-}
-
 export default function CustomEdge({
     id,
     sourceX,
@@ -47,7 +43,7 @@ export default function CustomEdge({
                 requiredExtensions="http://www.w3.org/1999/xhtml"
             >
                 <div>
-                    <button className="edgebutton" onClick={(event) => onEdgeClick(event, id)}>
+                    <button className="edgebutton">
                         ×
                     </button>
                 </div>

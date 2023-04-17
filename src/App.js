@@ -1,10 +1,13 @@
+import { ReactFlowProvider } from 'reactflow';
 import './App.css';
-import BasicChart from './react-flow-cmpts/flow';
+import WorkflowBuilder from './react-flow-cmpts/flow';
 
 function App() {
   return (
     <div>
-      <BasicChart/>
+      <ReactFlowProvider>
+        <WorkflowBuilder />
+      </ReactFlowProvider>
     </div>
   );
 }
